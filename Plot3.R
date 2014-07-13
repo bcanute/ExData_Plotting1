@@ -1,5 +1,5 @@
 #Plot3.R
-#Stage 1: Download the Data
+#Stage 1: Download the Data as per Readme file and place in working directory
 data <- read.table(file = "household_power_consumption.txt", header = TRUE, na.strings = "?", sep = ";")
 #Stage 2: Select a subset
 data2 <- subset(data, c(data$Date == '1/2/2007' | data$Date == '2/2/2007'))
